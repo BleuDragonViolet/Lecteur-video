@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur Vidéo Personnalisé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu en haut avec 4 boutons -->
+    <nav class="top-menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a propos.html">À propos</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Titre principal du lecteur vidéo -->
+    <h1 class="main-title">Lecteur Vidéo</h1>
+
+    <!-- Conteneur pour choisir un fichier local -->
+    <div class="open-file-container">
+        <!-- Bouton pour ouvrir un fichier vidéo -->
+        <label for="video-upload" class="btn open-file-btn">+</label>
+        <input type="file" id="video-upload" accept="video/*" style="display: none;">
+        <span class="instruction-text">Choisissez une vidéo ici</span>
+    </div>
+
+    <div class="video-container">
+        <!-- Lecteur vidéo avec taille fixe -->
+        <video id="video" class="video" width="100%" height="400px" poster="poster.jpg">
+            <source src="video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+
+        <!-- Contrôles vidéo -->
+        <div class="controls">
+            <button id="play-pause" class="btn play">▶</button>
+            <input type="range" id="progress-bar" class="progress-bar" value="0">
+        </div>
+
+        <!-- Barre de volume et plein écran, avec le bouton "boucle" collé à la barre de volume -->
+        <div class="bottom-controls">
+            <div class="volume-container">
+                <button id="volume-mute" class="btn volume">🔊</button>
+                <input type="range" id="volume-control" class="volume-control" min="0" max="1" step="0.1" value="1">
+                <button id="loop" class="btn loop">⭮</button>
+            </div>
+            <button id="fullscreen" class="btn fullscreen">⛶</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

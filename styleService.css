@@ -1,0 +1,21 @@
+.instructions-container {
+    background-color: #333; /* Fond gris foncé */
+    color: white; /* Texte blanc */
+    padding: 20px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+.instructions-container a {
+    color: #1e90ff; /* Liens bleu clair */
+    text-decoration: underline;
+}
+
+.instructions-container pre,
+.instructions-container code {
+    background-color: #444; /* Fond légèrement plus foncé pour le code */
+    color: white; /* Texte blanc */
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Courier New", Courier, monospace; /* Police de type monospace */
+}

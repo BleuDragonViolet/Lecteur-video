@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Lecteur Vidéo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .about-container {
+            max-width: 800px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu en haut avec 4 boutons -->
+    <nav class="top-menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a propos.html">À propos</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-container">
+        <h1>À propos</h1>
+        <p>Ce site est conçu pour offrir un lecteur vidéo interactif et personnalisable. Il vous permet de charger vos propres vidéos, de les lire et de les contrôler grâce à une interface moderne et intuitive.</p>
+
+        <p><strong>Fonctionnalités principales :</strong></p>
+        <ul>
+            <li>Charger des vidéos locales depuis votre appareil.</li>
+            <li>Contrôler la lecture : lecture/pause, volume, plein écran et boucle.</li>
+            <li>Interface simple et réactive adaptée à tous les utilisateurs.</li>
+        </ul>
+
+        <p><strong>Comment utiliser :</strong></p>
+        <ol>
+            <li>Cliquez sur le bouton "+" pour sélectionner une vidéo locale.</li>
+            <li>Utilisez les boutons en bas pour contrôler la lecture, ajuster le volume ou passer en plein écran.</li>
+            <li>Activez la boucle pour répéter la vidéo en continu.</li>
+        </ol>
+
+        <p>Ce projet est idéal pour les utilisateurs souhaitant une expérience vidéo pratique et personnalisée, sans dépendre des lecteurs intégrés aux navigateurs.</p>
+
+        <a href="index.html" class="back-button">Retour à l'accueil</a>
+    </div>
+</body>
+</html>

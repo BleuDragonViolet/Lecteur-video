@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Menu en haut */
+.top-menu {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.top-menu ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.top-menu ul li {
+    margin: 0 15px;
+}
+
+.top-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    transition: background-color 0.3s ease;
+}
+
+.top-menu ul li a:hover {
+    background-color: #333;
+}
+
+.main-title {
+    color: white;
+    margin-top: 10px; /* Réduit l'espace au-dessus du titre */
+    margin-bottom: 50px; /* Ajoute un peu d'espace en dessous pour éviter que le titre soit collé au bouton */
+    font-size: 32px;
+    text-align: center;
+}
+
+.main-titlee {
+    color: white;
+    margin-top: 10px; /* Réduit l'espace au-dessus du titre */
+    margin-bottom: 50px; /* Ajoute un peu d'espace en dessous pour éviter que le titre soit collé au bouton */
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Conteneur pour ouvrir une vidéo */
+.open-file-container {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-file-btn {
+    font-size: 30px;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.open-file-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Texte d'instruction à côté du bouton "+" */
+.instruction-text {
+    color: white;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Conserve une taille fixe pour le lecteur vidéo */
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+video {
+    display: block;
+    width: 100%;
+    height: 400px; /* Fixer une hauteur pour éviter que la vidéo agrandisse la boîte */
+    border-bottom: 4px solid #000;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #212121;
+    border-top: 2px solid #000;
+}
+
+/* Barre de progression */
+.progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: #666;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.2s;
+    width: 100%;
+}
+
+.progress-bar:hover {
+    background: #888;
+}
+
+/* Section des contrôles du bas */
+.bottom-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #212121;
+    border-top: 2px solid #000;
+}
+
+/* Conteneur de volume et bouton boucle */
+.volume-container {
+    display: flex;
+    align-items: center;
+}
+
+.volume-container .volume-control {
+    margin-left: 10px; /* Espace réduit entre le bouton et la barre de volume */
+}
+
+.volume-control {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: white; /* Couleur blanche pour la barre de volume */
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.2s;
+    width: 100px; /* Largeur fixe pour la barre de volume */
+}
+
+.volume-control:hover {
+    background: #ccc; /* Changement de couleur au survol */
+}
+
+/* Bouton "boucle" à côté de la barre de volume */
+.loop {
+    font-size: 20px;
+    margin-left: 10px; /* Espace entre la barre de volume et le bouton */
+}
+
+.fullscreen {
+    font-size: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
